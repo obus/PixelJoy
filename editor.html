@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PixelJoy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  
+
+  <div class="tools">
+    <button id="eraser" class="tool-btn">Ластик</button>
+    <button id="clear" class="tool-btn">Очистить всё</button>
+  </div>
+
+
+  <div class="add-color-section">
+    <input type="color" id="colorPicker" value="#ffffff">
+    <button id="addColor" class="tool-btn knopka">Добавить цвет</button>
+  </div>
+
+ 
+  <div class="palette" id="palette">
+    
+    <div class="swatch active black" data-color="#000000"></div>
+    <div class="swatch white" data-color="#ffffff"></div>
+    <div class="swatch red " data-color="#ff4444"></div>
+    <div class="swatch green" data-color="#44ff44"></div>
+    <div class="swatch blue" data-color="#4488ff"></div>
+    <div class="swatch yellow" data-color="#ffff44"></div>
+    <div class="swatch pink" data-color="#ff44ff"></div>
+    <div class="swatch orange" data-color="#ff8800"></div>
+    <div class="swatch voda" data-color="aqua"></div>
+  </div>
+<div class="container"></div>
+<script src="script.js"></script>
+</body>
+</html>
