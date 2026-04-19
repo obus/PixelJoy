@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0a0a14;
+  color: #e0e0ff;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+h1 {
+  margin: 10px 0 20px;
+  color: #ffeb3b;
+  text-shadow: 2px 2px 0 #000;
+  font-size: 2.8rem;
+}
+
+.tools {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.tool-btn {
+  padding: 10px 22px;
+  font-size: 1rem;
+  background: #1e1e38;
+  color: #e0e0ff;
+  border: 3px solid #404070;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s;
+  
+}
+
+.tool-btn:hover {
+  background: #2a2a4e;
+  border-color: #6a6aa0;
+}
+
+.tool-btn.active {
+  border-color: #ffeb3b;
+  box-shadow: 0 0 12px #ffeb3b44;
+}
+
+.palette {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  padding: 12px;
+  background: #1e1e38;
+  border: 4px solid #404070;
+  border-radius: 8px;
+}
+
+.swatch {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #404070;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.swatch:hover {
+  transform: scale(1.15);
+  border-color: #ffeb3b;
+  box-shadow: 0 0 10px #ffeb3b44;
+}
+
+.swatch.active {
+  border: 4px solid #ffeb3b;
+  transform: scale(1.12);
+  box-shadow: 0 0 14px #ffeb3b66;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(32, 40px);
+  grid-template-rows: repeat(16, 40px);
+  gap: 1px;
+  background: #111122;
+  border: 4px solid #2a2a4e;
+  box-shadow: 0 0 25px #0008;
+}
+
+.cell {
+  background-color: #1e1e38;
+  border: 1px solid #333355;
+  cursor: pointer;
+}
+
+.cell:hover {
+  filter: brightness(1.25);
+}
+
+.black{
+  background-color: #000;
+}
+
+.white{
+  background-color: #fff;
+}
+
+.red{
+  background: red;
+}
+
+#colorPicker {
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  border: 3px solid #404070;
+  border-radius: 8px;
+  cursor: pointer;
+  background: transparent;
+}
+
+.green{
+  background-color: greenyellow;
+}
+
+.blue{
+  background-color:#4488ff ;
+}
+
+.yellow{
+  background-color: #ffff44;
+}
+
+.pink{
+  background-color: #ff44ff;
+}
+
+.orange{
+  background-color: #ff8800;
+}
+
+.voda{
+  background-color: aqua;
+}
