@@ -1,40 +1,36 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PixelJoy</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelJoy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"
 </head>
 <body>
 
-  
+<header>
+  <div class="logo">PixelJoy</div>
+  <nav>
+    <a href="#features">Возможности</a>
+    <a href="#">Галерея</a>
+    <a href="#">Сообщество</a>
+  </nav>
+</header>
 
-  <div class="tools">
-    <button id="eraser" class="tool-btn">Ластик</button>
-    <button id="clear" class="tool-btn">Очистить всё</button>
+<main class="hero">
+  <div class="hero-content">
+    <h1>Рисуй пиксель-арт<br>прямо в браузере</h1>
+    <p class="subtitle">
+      Бесплатно • Без регистрации • Моментально • Сохраняй в PNG
+    </p>
+    <div class="cta-buttons">
+      <a href="editor.html" class="button">Начать рисовать →</a>
+    </div>
   </div>
+</main>
 
-
-  <div class="add-color-section">
-    <input type="color" id="colorPicker" value="#ffffff">
-    <button id="addColor" class="tool-btn knopka">Добавить цвет</button>
-  </div>
-
- 
-  <div class="palette" id="palette">
-    
-    <div class="swatch active black" data-color="#000000"></div>
-    <div class="swatch white" data-color="#ffffff"></div>
-    <div class="swatch red " data-color="#ff4444"></div>
-    <div class="swatch green" data-color="#44ff44"></div>
-    <div class="swatch blue" data-color="#4488ff"></div>
-    <div class="swatch yellow" data-color="#ffff44"></div>
-    <div class="swatch pink" data-color="#ff44ff"></div>
-    <div class="swatch orange" data-color="#ff8800"></div>
-    <div class="swatch voda" data-color="aqua"></div>
-  </div>
-<div class="container"></div>
-<script src="script.js"></script>
 </body>
 </html>
